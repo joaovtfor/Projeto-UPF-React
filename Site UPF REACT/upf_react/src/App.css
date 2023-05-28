@@ -1,0 +1,47 @@
+.container {
+  min-height: 60vh;
+  margin-bottom: 5em;
+}
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  text-align: center;
+  line-height: 150px;
+  font-size: 1.3rem;
+  color: #000000;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #000000;
+}
+
+.ring:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+}
+
+#ring {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite;
+}
